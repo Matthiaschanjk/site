@@ -1,0 +1,82 @@
+body {
+    background-color: #b4d4ff !important;
+}
+
+h1, h2, h3, #contact-me{
+    font-family: 'Poppins', sans-serif;
+}
+
+p, span, a {
+    font-family: 'Lato', sans-serif;
+}
+
+.projects-container {
+    background-color: #eef5ff;
+}
+#main-container {
+    background-color: #eef5ff;
+    border-radius: 20px;
+    margin: 80px;
+    margin-top: 60px;
+    word-wrap: break-word;
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+
+#about-body {
+    margin-top: -250px;
+}
+
+#matthias {
+    color:#b4d4ff;
+}
+
+.mybuttons {
+    background-color: #b4d4ff;
+    border-color: #7db8f6;
+    border-radius: 30px;
+    --bs-btn-hover-bg: #92bdf6;
+    --bs-btn-hover-border-color: #92bdf6;
+
+}
+
+#contact-me {
+    color: black;
+    font-weight: bolder;
+}
+
+.flex {
+    display: flex;
+}
+
+.card {
+    height: 450px;
+}
+
+.card-education {
+    height: 350px !important;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+}
+
+.no-bs-gutter {
+    --bs-gutter-x: 0 !important;
+}
+
+.flex-skills {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
