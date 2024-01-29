@@ -99,3 +99,30 @@ p, span, a {
         height: auto;
     }
 }
+
+/* for when screen is 500px or below */
+@media (max-width: 500px) {
+    #main-container {
+        margin:0;
+        padding: 0;
+        border-radius: 0;
+        width: fit-content;
+    }
+
+    .lead {
+        width: 250px;
+    }
+
+    #about-me-contact-button {
+        width: 200px;
+    }
+
+    .card-education {
+        height: 600px !important;
+    }
+
+    .project-images {
+        width: 350px;
+        height: auto;
+    }
+}
