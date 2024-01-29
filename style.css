@@ -80,3 +80,22 @@ p, span, a {
     align-content: center;
 }
 
+/* for when screen is 770px or below */
+@media (max-width: 770px) {
+    .lead {
+        width: 250px;
+    }
+
+    #about-me-contact-button {
+        width: 200px;
+    }
+
+    .card-education {
+        height: 550px !important;
+    }
+
+    .project-images {
+        width:350px;
+        height: auto;
+    }
+}
