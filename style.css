@@ -51,6 +51,7 @@ p, span, a {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -80,6 +81,68 @@ p, span, a {
     align-content: center;
 }
 
+.card-personalised {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    background: #ffffff;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-right: 2rem;
+    margin-top: 1rem;
+   }
+   
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+   
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #92bdf6;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+   
+.text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+
+.card-personalised:hover {
+    border-color: #92bdf6;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+.card-personalised:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.project-images {
+    width:200px;
+    height:auto;
+}
+
 /* for when screen is 770px or below */
 @media (max-width: 770px) {
     .lead {
@@ -97,6 +160,24 @@ p, span, a {
     .project-images {
         width:350px;
         height: auto;
+    }
+
+    
+    .project-images {
+        text-align: center;
+        width: 250px;
+        height: auto;
+    }
+
+    #project-flex {
+        display:block;
+    }
+
+    .card-personalised {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 }
 
@@ -119,10 +200,5 @@ p, span, a {
 
     .card-education {
         height: 600px !important;
-    }
-
-    .project-images {
-        width: 350px;
-        height: auto;
     }
 }
